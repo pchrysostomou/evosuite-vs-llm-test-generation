@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!---
  Licensed to the Apache Software Foundation (ASF) under one or more
  contributor license agreements.  See the NOTICE file distributed with
@@ -103,3 +104,6 @@ Additional Resources
 + `#apache-commons` IRC channel on `irc.freenode.org`
 
 [ml]:https://commons.apache.org/mail-lists.html
+=======
+# evosuite-vs-llm-test-generation
+>>>>>>> 02c4e7a646bfcdd4eb37e25c856c461a288aaac7
