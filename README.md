@@ -1,5 +1,7 @@
 # EvoSuite vs LLM Test Generation Comparison
 
+**Author:** Prodromos Chrysostomou ([@pchrysostomou](https://github.com/pchrysostomou)) — based on [Apache Commons Collections](https://commons.apache.org/proper/commons-collections/) (Apache License 2.0, see [License & Attribution](#license--attribution)).
+
 ## Overview
 This repository contains a study and empirical comparison between human-written (Developer) test suites, sampled test suites, and Large Language Model (LLM) generated test suites. The target project used for this analysis is **Apache Commons Collections 4**.
 
@@ -56,3 +58,16 @@ Below is a summary of the PIT execution results comparing the different test sui
 | **Developer sampled (D16)** | 267     | 23%           | ~20%              |
 
 *(Note: Detailed results, including KILLED, SURVIVED, NO_COVERAGE, and TIMED_OUT metrics, can be found in the generated HTML reports under `/target/pitReports/`).*
+
+## Author
+The mutation-testing study, the added test suites, the automation scripts, and the analysis in this repository were created by **Prodromos Chrysostomou** ([@pchrysostomou](https://github.com/pchrysostomou)) as part of a university assignment.
+
+## License & Attribution
+This repository is based on the source code of [Apache Commons Collections 4](https://commons.apache.org/proper/commons-collections/), Copyright 2001–2019 The Apache Software Foundation (ASF), licensed under the [Apache License, Version 2.0](LICENSE.txt). The original `LICENSE.txt` and `NOTICE.txt` files are retained unchanged, as required by the license.
+
+In accordance with Section 4 of the Apache License 2.0, the following changes were made to the original project by Prodromos Chrysostomou:
+* Modified `pom.xml` to integrate the `pitest-maven` plugin and route PIT reports to per-suite directories.
+* Added the test suites `M16Test`, `M32Test`, `M64Test` (LLM-generated) and `D16Test`, `D32Test`, `D64Test` (sampled from the original developer tests) under `src/test/java/org/apache/commons/collections4/`.
+* Added the automation scripts `run_all_pit_fast.sh` / `run_all_pit_full.sh`, the documentation files `README_PIT.md`, `README_PIT_UBUNTU.md`, `README_RUN.md`, and the generated PIT reports under `target/pitReports/`.
+
+All modifications and additions are likewise made available under the Apache License, Version 2.0. This repository is an independent academic study and is not affiliated with or endorsed by the Apache Software Foundation.
