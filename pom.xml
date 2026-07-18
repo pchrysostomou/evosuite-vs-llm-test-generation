@@ -412,7 +412,6 @@
 
             <exclude>scripts/cw4_tools/**</exclude>
             <exclude>README_RUN.md</exclude>
-            <exclude>COMP0103_CW4_PIT_Report_ApacheCommonsCollections4.4_FINAL.docx</exclude>
             <exclude>target/**</exclude>
           </excludes>
         </configuration>
